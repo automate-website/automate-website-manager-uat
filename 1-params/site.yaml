@@ -44,27 +44,27 @@ steps:
    - store:
          appSelectorControlAccount: ${siteSelectorContainerHeader} a[ui-sref="account"]
    - store:
-         appSelectorContainerMain: div.container-main
+         siteAppSelectorContainerMain: div.container-main
    - store:
           appSelectorControlNavigateToProjects: ${siteSelectorContainerHeader} a[ui-sref="projects"]
    - store:
-          projectsSelectorControlNew: ${appSelectorContainerMain} a.project-panel-new
+          projectsSelectorControlNew: ${siteAppSelectorContainerMain} a.project-panel-new
    - store:
-          projectSelectorInputTitle: "${appSelectorContainerMain} input#projectTitle"
+          projectSelectorInputTitle: "${siteAppSelectorContainerMain} input#projectTitle"
    - store:
-          projectSelectorContainerColorPicker: ${appSelectorContainerMain} div.color-picker
+          projectSelectorContainerColorPicker: ${siteAppSelectorContainerMain} div.color-picker
    - store:
           projectSelectorControlColorSecond: ${projectSelectorContainerColorPicker} label:nth-child(2)
    - store:
-          projectSelectorControlDialect: ${appSelectorContainerMain} div.btn-group
+          projectSelectorControlDialect: ${siteAppSelectorContainerMain} div.btn-group
    - store:
           projectSelectorControlDialectSelenium: ${projectSelectorControlDialect} label[uib-btn-radio*=SELENIUM]
    - store:
-          projectSelectorControlType: ${appSelectorContainerMain} div.btn-group
+          projectSelectorControlType: ${siteAppSelectorContainerMain} div.btn-group
    - store:
           projectSelectorControlTypeLocal: ${projectSelectorControlType} label[uib-btn-radio*=LOCAL]
    - store:
-          projectSelectorControlSave: ${appSelectorContainerMain} button[type=submit]
+          projectSelectorControlSave: ${siteAppSelectorContainerMain} button[type=submit]
    - store: 
           projectsSelectorControlNavigateToProject: ${siteSelectorContainerHeader} h1 a.navbar-header-animation
    - store:

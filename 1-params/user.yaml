@@ -9,3 +9,5 @@ steps:
         dataCurrentUserEmail: ${ dataCurrentUserFirstName + '.' + dataCurrenUserLastName + '@example.com' }
    - store:
         dataCurrentUserPassword: "${ $.random.string() }"
+   - store:
+        dataNewUserPassword: "${ $.random.string() }"
