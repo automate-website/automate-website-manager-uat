@@ -1,0 +1,7 @@
+title: ensure-at-register-page
+type: fragment
+steps:
+    - waitUntilAnyOfElementsContainsText:
+        selector: ${registerPageSelectorContainer} h1
+        text: ${registerPageHeaderTitle}
+        ms: ${siteTimeout}

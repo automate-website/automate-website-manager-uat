@@ -7,3 +7,12 @@ steps:
          accountPageSelectorControllLogout: button
    - store:
          accountPageControlTextLogout: Logout
+   - store:
+         accountPageControlTextDeleteAccount: Delete account
+   - store:
+         accountPageSelectorControl: button
+   - store:
+         accountPageModalControlTextDeleteAccount: Delete account
+   - store:
+         accountPageModalSelectorControl: div.modal-dialog button
+         

@@ -3,5 +3,5 @@ type: fragment
 steps:
     - waitUntilAnyOfElementsContainsText:
         selector: ${loginPageSelectorContainer} h1
-        text: Sign in
+        text: ${loginPageHeaderTitle}
         ms: ${siteTimeout}

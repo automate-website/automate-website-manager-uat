@@ -1,9 +1,10 @@
-title: story-login-logout
+title: params
+type: fragment
 steps:
    - include: params-site
    - include: params-login-page
    - include: params-projects-page
    - include: params-account-page
+   - include: params-register-page
    - include: params-user
-   - include: action-login
-   - include: action-logout
+         

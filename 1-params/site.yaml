@@ -28,10 +28,6 @@ steps:
    - store:
          signupSelectorContainer: "div.signup-panel"
    - store:
-         signupSelectorInputEmail: "${signupSelectorContainer} input#inputEmail"
-   - store:
-         signupSelectorInputPassword: "${signupSelectorContainer} input#inputPassword"
-   - store:
          loginPageSelectorInputEmail: "${loginPageSelectorContainer} input#inputEmail"
    - store:
          loginPageSelectorInputPassword: "${loginPageSelectorContainer} input#inputPassword"
@@ -41,8 +37,6 @@ steps:
          changePasswordSelectorInputNewPassword: "${changePasswordSelectorContainer} input#newPassword"
    - store:
          loginPageSelectorControlLogin: ${loginPageSelectorContainer} button[type=submit]
-   - store:
-         signupSelectorControlSignup: ${signupSelectorContainer} button[type=submit]
    - store:
          changePasswordSelectorControlChangePassword: ${changePasswordSelectorContainer} button[type=submit]
    - store:

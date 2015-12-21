@@ -1,0 +1,12 @@
+title: action-register
+type: fragment
+steps:
+    - include: goto-register-page
+    - setValue:
+         selector: ${registerPageSelectorInputEmail}
+         value: ${dataCurrentUserEmail}
+    - setValue:
+         selector: ${registerPageSelectorInputPassword}
+         value: ${dataCurrentUserPassword}
+    - click: ${registerPageSelectorControlSignup}
+    - include: ensure-at-home-page

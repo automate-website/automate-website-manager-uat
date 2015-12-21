@@ -1,0 +1,8 @@
+title: story-login-logout
+#type: fragment
+steps:
+   - include: params
+   - include: action-register
+   - include: action-logout
+   - include: action-login
+   - include: action-delete-account

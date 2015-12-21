@@ -11,3 +11,5 @@ steps:
          loginPageSelectorInputPassword: "${loginPageSelectorContainer} input#inputPassword"
    - store:
          loginPageSelectorControlLogin: ${loginPageSelectorContainer} button[type=submit]
+   - store:
+         loginPageHeaderTitle: Sign in
