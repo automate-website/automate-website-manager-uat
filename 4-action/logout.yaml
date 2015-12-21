@@ -1,0 +1,9 @@
+title: action-logout
+type: fragment
+steps:
+  - include: goto-account-page
+  - waitUntilAnyOfElementsContainsTextAndClick:
+      selector: ${accountPageSelectorControllLogout}
+      text: ${accountPageControlTextLogout}
+      ms: ${siteTimeout}
+  - include: ensure-at-login-page

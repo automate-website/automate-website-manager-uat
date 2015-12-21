@@ -1,0 +1,9 @@
+title: params-account-page
+type: fragment
+steps:
+   - store:
+         accountPageUrl: ${commonsUrlApp}/account
+   - store:
+         accountPageSelectorControllLogout: button
+   - store:
+         accountPageControlTextLogout: Logout

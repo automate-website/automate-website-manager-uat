@@ -1,0 +1,12 @@
+title: action-login
+type: fragment
+steps:
+   - include: goto-login-page
+   - setValue:
+         selector: ${loginPageSelectorInputEmail}
+         value: ${dataCurrentUserName}
+   - setValue:
+         selector: ${loginPageSelectorInputPassword}
+         value: ${dataCurrentUserPassword}
+   - click: ${loginPageSelectorControlLogin}
+   - include: ensure-at-home-page

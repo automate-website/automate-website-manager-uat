@@ -1,0 +1,7 @@
+title: ensure-at-projects-page
+type: fragment
+steps:
+    - waitUntilAnyOfElementsContainsText:
+         selector: ${siteSelectorContainerHeader} h1.navbar-header a
+         text: ${projectsPageHeaderTitle}
+         ms: ${siteTimeout}

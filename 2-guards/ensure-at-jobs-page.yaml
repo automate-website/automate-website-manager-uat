@@ -1,0 +1,7 @@
+title: ensure-at-jobs-page
+type: fragment
+steps:
+    - waitUntilAnyOfElementsContainsText:
+         selector: ${siteSelectorContainerHeader} h1.navbar-header a
+         text: Your account
+         ms: ${siteTimeout}

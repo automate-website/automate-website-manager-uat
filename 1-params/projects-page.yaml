@@ -1,0 +1,7 @@
+title: params-projects-page
+type: fragment
+steps:
+   - store:
+         projectsPageUrl: ${commonsUrlApp}/projects
+   - store:
+         projectsPageHeaderTitle: Projects

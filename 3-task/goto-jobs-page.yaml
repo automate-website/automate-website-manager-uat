@@ -1,0 +1,5 @@
+title: goto-jobs-page
+type: fragment
+steps:
+    - url: ${jobsPageUrl}
+    - include: ensure-at-jobs-page

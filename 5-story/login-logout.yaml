@@ -1,0 +1,8 @@
+title: story-login-logout
+steps:
+   - include: params-site
+   - include: params-login-page
+   - include: params-projects-page
+   - include: params-account-page
+   - include: action-login
+   - include: action-logout

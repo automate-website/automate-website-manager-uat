@@ -1,0 +1,4 @@
+title: ensure-at-home-page
+type: fragment
+steps:
+    - include: ensure-at-projects-page

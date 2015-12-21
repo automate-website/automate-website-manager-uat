@@ -1,0 +1,7 @@
+title: ensure-at-login-page
+type: fragment
+steps:
+    - waitUntilAnyOfElementsContainsText:
+        selector: ${loginPageSelectorContainer} h1
+        text: Sign in
+        ms: ${siteTimeout}

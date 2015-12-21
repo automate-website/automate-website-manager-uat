@@ -1,0 +1,79 @@
+title: params-site
+type: fragment
+steps:
+   - store:
+         siteTimeout: 5000
+   - store:
+         commonsUrlBase: https://automate.website
+   - store:
+         commonsUrlApp: ${commonsUrlBase}/app
+   - store:
+         loginPageUrl: ${commonsUrlApp}/login
+   - store:
+         commonsUrlSignup: ${commonsUrlApp}/signup
+   - store:
+         dataCurrentUserName: integrationtest@automate.website
+   - store:
+         dataCurrentUserPassword: 9mExkGczQuj8Rq7cIfhz
+   - store:
+         dataUserNewPassword: 8mExkGczQuj8Rq7cIfhz
+   - store:
+         dataCurrentProjectTitle: New selenium project
+   - store:
+         dataCurrentScenarioTitle: New scenario
+   - store:
+         dataCurrentSshKey: Secr3t
+   - store:
+         loginPageSelectorContainer: "div.login-panel"
+   - store:
+         changePasswordSelectorContainer: "div.login-panel"
+   - store:
+         signupSelectorContainer: "div.signup-panel"
+   - store:
+         signupSelectorInputEmail: "${signupSelectorContainer} input#inputEmail"
+   - store:
+         signupSelectorInputPassword: "${signupSelectorContainer} input#inputPassword"
+   - store:
+         loginPageSelectorInputEmail: "${loginPageSelectorContainer} input#inputEmail"
+   - store:
+         loginPageSelectorInputPassword: "${loginPageSelectorContainer} input#inputPassword"
+   - store:
+         changePasswordSelectorInputCurrentPassword: "${changePasswordSelectorContainer} input#currentPassword"
+   - store:
+         changePasswordSelectorInputNewPassword: "${changePasswordSelectorContainer} input#newPassword"
+   - store:
+         loginPageSelectorControlLogin: ${loginPageSelectorContainer} button[type=submit]
+   - store:
+         signupSelectorControlSignup: ${signupSelectorContainer} button[type=submit]
+   - store:
+         changePasswordSelectorControlChangePassword: ${changePasswordSelectorContainer} button[type=submit]
+   - store:
+         siteSelectorContainerHeader: div[ui-view=navbar]
+   - store:
+         appSelectorControlAccount: ${siteSelectorContainerHeader} a[ui-sref="account"]
+   - store:
+         appSelectorContainerMain: div.container-main
+   - store:
+          appSelectorControlNavigateToProjects: ${siteSelectorContainerHeader} a[ui-sref="projects"]
+   - store:
+          projectsSelectorControlNew: ${appSelectorContainerMain} a.project-panel-new
+   - store:
+          projectSelectorInputTitle: "${appSelectorContainerMain} input#projectTitle"
+   - store:
+          projectSelectorContainerColorPicker: ${appSelectorContainerMain} div.color-picker
+   - store:
+          projectSelectorControlColorSecond: ${projectSelectorContainerColorPicker} label:nth-child(2)
+   - store:
+          projectSelectorControlDialect: ${appSelectorContainerMain} div.btn-group
+   - store:
+          projectSelectorControlDialectSelenium: ${projectSelectorControlDialect} label[uib-btn-radio*=SELENIUM]
+   - store:
+          projectSelectorControlType: ${appSelectorContainerMain} div.btn-group
+   - store:
+          projectSelectorControlTypeLocal: ${projectSelectorControlType} label[uib-btn-radio*=LOCAL]
+   - store:
+          projectSelectorControlSave: ${appSelectorContainerMain} button[type=submit]
+   - store: 
+          projectsSelectorControlNavigateToProject: ${siteSelectorContainerHeader} h1 a.navbar-header-animation
+   - store:
+          appSelectorControlNavigateToAccount: ${siteSelectorContainerHeader} a[ui-sref=account]
