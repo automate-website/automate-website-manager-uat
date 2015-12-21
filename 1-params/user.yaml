@@ -1,0 +1,11 @@
+title: params-user
+type: fragment
+steps:
+   - store:
+        dataCurrentUserFirstName: ${ $.random.first() }
+   - store:
+        dataCurrenUserLastName: ${ $.random.last() }
+   - store:
+        dataCurrentUserEmail: ${ dataCurrentUserFirstName + '.' + dataCurrenUserLastName + '@example.com' }
+   - store:
+        dataCurrentUserPassword: "${ $.random.string() }"

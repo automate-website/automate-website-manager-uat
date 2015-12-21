@@ -2,4 +2,4 @@ title: params-jobs-page
 type: fragment
 steps:
    - store:
-         jobsPageUrl: ${commonsUrlApp}/jobs
+         jobsPageUrl: ${siteAppUrl}/jobs

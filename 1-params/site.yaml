@@ -4,15 +4,13 @@ steps:
    - store:
          siteTimeout: 5000
    - store:
-         commonsUrlBase: https://automate.website
+         siteBaseUrl: https://automate.website
    - store:
-         commonsUrlApp: ${commonsUrlBase}/app
+         siteAppUrl: ${siteBaseUrl}/app
    - store:
-         loginPageUrl: ${commonsUrlApp}/login
+         commonsUrlSignup: ${siteAppUrl}/signup
    - store:
-         commonsUrlSignup: ${commonsUrlApp}/signup
-   - store:
-         dataCurrentUserName: integrationtest@automate.website
+         dataCurrentUserEmail: integrationtest@automate.website
    - store:
          dataCurrentUserPassword: 9mExkGczQuj8Rq7cIfhz
    - store:

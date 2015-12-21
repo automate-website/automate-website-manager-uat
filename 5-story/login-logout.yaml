@@ -4,5 +4,6 @@ steps:
    - include: params-login-page
    - include: params-projects-page
    - include: params-account-page
+   - include: params-user
    - include: action-login
    - include: action-logout

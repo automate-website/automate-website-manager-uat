@@ -2,7 +2,7 @@ title: params-login-page
 type: fragment
 steps:
    - store:
-         loginPageUrl: ${commonsUrlApp}/login
+         loginPageUrl: ${siteAppUrl}/login
    - store:
          loginPageSelectorContainer: "div.login-panel"
    - store:

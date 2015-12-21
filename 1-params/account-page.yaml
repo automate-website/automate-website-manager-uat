@@ -2,7 +2,7 @@ title: params-account-page
 type: fragment
 steps:
    - store:
-         accountPageUrl: ${commonsUrlApp}/account
+         accountPageUrl: ${siteAppUrl}/account
    - store:
          accountPageSelectorControllLogout: button
    - store:
