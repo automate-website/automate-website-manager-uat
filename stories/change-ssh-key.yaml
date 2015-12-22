@@ -1,5 +1,4 @@
 title: story-change-ssh-key
-type: fragment
 steps:
    - include: params
    - include: action-register

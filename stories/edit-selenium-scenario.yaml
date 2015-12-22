@@ -1,5 +1,4 @@
 title: story-edit-selenium-scenario
-type: fragment
 steps:
    - include: params
    - include: action-register

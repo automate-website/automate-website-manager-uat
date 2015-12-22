@@ -1,5 +1,4 @@
 title: story-register-delete-account
-type: fragment
 steps:
    - include: params
    - include: action-register
