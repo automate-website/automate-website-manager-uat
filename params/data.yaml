@@ -10,6 +10,10 @@ steps:
    - store:
         dataCurrentUserPassword: "${ $.random.string() }"
    - store:
+        dataCurrentUserEmail: integrationtest1@automate.website
+   - store:
+        dataCurrentUserPassword: 9mExkGczQuj8Rq7cIfhz
+   - store:
         dataNewUserPassword: "${ $.random.string() }"
    - store:
         dataCurrentProjectTitle: ${ $.random.word() }
@@ -33,3 +37,5 @@ NM+YkPDe5TSouxrLjf6Te/4jCMxTCu2SbMfgwBd4oEkR
         dataCurrentRepository: git@bitbucket.org:automate-website/automate-website-manager-uat-example.git
    - store:
         dataCurrentScenarioTitle: New scenario
+   - store:
+        dataCurrentScenarioBaseUrl: https://automate.website/app

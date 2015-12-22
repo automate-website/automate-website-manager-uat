@@ -8,7 +8,7 @@ steps:
         ms: ${siteTimeout}
         basedOnSelector: ${scenariosPageScenarioContainerSelectorDropdownControl}
    - waitUntilAnyOfElementsContainsTextAndClick:
-        selector: li[role=menuitem] a
+        selector: ${scenariosPageSelectorDropdownControlElements}
         text: ${scenariosPageControlTextDeleteScenario}
         ms: ${siteTimeout} 
    - waitUntilNoneOfElementsContainsText:

@@ -1,0 +1,13 @@
+title: goto-scenario-edit-page
+type: fragment
+steps:
+    - waitUntilAnyOfElementsContainsTextAndClickBasedOn:
+        selector: ${scenariosPageSelectorScenarioContainer}
+        text: ${dataCurrentScenarioTitle}
+        ms: ${siteTimeout}
+        basedOnSelector: ${scenariosPageScenarioContainerSelectorDropdownControl}
+    - waitUntilAnyOfElementsContainsTextAndClick:
+        selector: ${scenariosPageSelectorDropdownControlElements}
+        text: ${scenariosPageControlTextEditScenario}
+        ms: ${siteTimeout}
+    - include: ensure-at-scenario-edit-page

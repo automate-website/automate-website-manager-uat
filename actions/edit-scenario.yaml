@@ -1,0 +1,40 @@
+title: action-edit-scenario
+type: fragment
+steps:
+   - include: ensure-at-scenario-edit-page
+   - include: edit-scenario-basics
+   - include: edit-scenario-steps
+   - include: save-scenario
+   - include: ensure-at-scenarios-page
+---
+title: edit-scenario-basics
+type: fragment
+steps:
+    - waitForVisible:
+        selector: ${scenarioEditPageSelectorInputTitle}
+        ms: ${siteTimeout}
+    - setValue:
+        selector: ${scenarioEditPageSelectorInputTitle}
+        value: ${dataCurrentScenarioTitle}
+    - setValue:
+        selector: ${scenarioEditPageSelectorInputBaseUrl}
+        value: ${dataCurrentScenarioBaseUrl}
+    - selectByVisibleText:
+        selector: ${scenarioEditPageSelectorControlSeleniumDialect}
+        text: ${scenarioEditPageTextControlSeleniumDialect}
+---
+title: edit-scenario-steps
+type: fragment
+steps:
+    - click: ${scenarioEditPageSelectorControlAddStep}
+    - click: ${scenarioEditPageSelectorControlOpen}
+    - setValue:
+        selector: ${scenarioEditPageSelectorInputStepParameters}
+        value: ${dataCurrentScenarioBaseUrl}
+---
+title: save-scenario
+type: fragment
+steps:
+    - anyOfElementsContainsTextAndClick:
+        selector: ${scenarioEditPageSelectorControlSave}
+        text: ${scenarioEditPageTextInputSave}

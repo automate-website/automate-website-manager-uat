@@ -9,4 +9,8 @@ steps:
       scenariosPageScenarioContainerSelectorDropdownControl: button.dropdown-toggle
   - store:
       scenariosPageControlTextDeleteScenario: Delete
+  - store:
+      scenariosPageControlTextEditScenario: Edit
+  - store:
+      scenariosPageSelectorDropdownControlElements : ${siteSelectorContainerMain} li[role=menuitem] a
   
