@@ -1,4 +1,4 @@
-title: params-user
+title: params-data
 type: fragment
 steps:
    - store:
@@ -11,3 +11,5 @@ steps:
         dataCurrentUserPassword: "${ $.random.string() }"
    - store:
         dataNewUserPassword: "${ $.random.string() }"
+   - store:
+        dataCurrentProjectTitle: ${ $.random.word() }

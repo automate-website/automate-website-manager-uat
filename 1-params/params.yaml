@@ -7,5 +7,6 @@ steps:
    - include: params-account-page
    - include: params-register-page
    - include: params-change-password-page
-   - include: params-user
+   - include: params-project-edit-page
+   - include: params-data
          

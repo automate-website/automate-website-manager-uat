@@ -1,0 +1,37 @@
+title: configure-project
+type: fragment
+steps:
+   - include: ensure-at-projects-page
+   - waitForVisible:
+        selector: ${projectsPageSelectorControlNew}
+        ms: ${siteTimeout}
+   - click: ${projectsPageSelectorControlNew}
+   - waitForVisible:
+        selector: ${projectPageSelectorInputTitle}
+        ms: ${siteTimeout}
+   - setValue:
+        selector: ${projectPageSelectorInputTitle}
+        value: ${dataCurrentProjectTitle}
+   - click: ${projectPageSelectorControlColorSecond}
+---
+title: save-project
+type: fragment
+steps:
+   - click: ${projectPageSelectorControlSave}
+   - include: ensure-at-project-page
+---
+title: action-create-local-selenium-project
+type: fragment
+steps:
+   - include: configure-project
+   - click: ${projectPageSelectorControlDialectSelenium}
+   - click: ${projectPageSelectorControlTypeLocal}
+   - include: save-project
+---
+title: create-local-waml-project
+type: fragment
+steps:
+   - include: configure-project
+   - click: ${projectPageSelectorControlDialectWAML}
+   - click: ${projectPageSelectorControlTypeLocal}
+   - include: save-project

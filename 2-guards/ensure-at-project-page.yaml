@@ -1,0 +1,6 @@
+title: ensure-at-project-page
+type: fragment
+steps:
+   - waitForVisible:
+        selector: ${siteSelectorControlNavigateToPage}[title="${dataCurrentProjectTitle}"]
+        ms: ${siteTimeout}

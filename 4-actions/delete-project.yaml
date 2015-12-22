@@ -1,0 +1,20 @@
+title: action-delete-project
+type: fragment
+steps:
+    - include: goto-projects-page
+    - moveToAnyOfElementsContainsText:
+        selector: ${projectsPageSelectorControlExisting}
+        text: ${dataCurrentProjectTitle}
+        ms: ${siteTimeout}
+    - waitUntilAnyOfElementsContainsTextAndClickBasedOn:
+        selector: ${projectsPageSelectorControlExisting}
+        text: ${dataCurrentProjectTitle}
+        basedOnSelector: ${projectsPageProjectContainerSelectorControlDeleteProject}
+        ms: ${siteTimeout}
+    - waitUntilAnyOfElementsContainsTextAndClick:
+        selector: ${projectsPageModalSelectorControl}
+        text: ${projectsPageModalControlTextDeleteProject}
+    - waitUntilNoneOfElementsContainsText:
+        selector: ${projectsPageSelectorControlExisting}
+        text: ${dataCurrentProjectTitle}
+        ms: ${siteTimeout}

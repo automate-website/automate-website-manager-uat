@@ -6,10 +6,10 @@ steps:
    - store:
          registerPageSelectorContainer: "div.signup-panel"
    - store:
-         registerPageSelectorInputEmail: "${signupSelectorContainer} input#inputEmail"
+         registerPageSelectorInputEmail: "${registerPageSelectorContainer} input#inputEmail"
    - store:
-         registerPageSelectorInputPassword: "${signupSelectorContainer} input#inputPassword"
+         registerPageSelectorInputPassword: "${registerPageSelectorContainer} input#inputPassword"
    - store:
-         registerPageSelectorControlSignup: ${signupSelectorContainer} button[type=submit]
+         registerPageSelectorControlSignup: ${registerPageSelectorContainer} button[type=submit]
    - store:
          registerPageHeaderTitle: Sign up
