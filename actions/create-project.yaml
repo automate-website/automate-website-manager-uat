@@ -28,7 +28,7 @@ steps:
    - click: ${projectPageSelectorControlTypeLocal}
    - include: save-project
 ---
-title: create-local-waml-project
+title: action-create-local-waml-project
 type: fragment
 steps:
    - include: configure-project

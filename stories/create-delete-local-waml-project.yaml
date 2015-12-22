@@ -1,7 +1,8 @@
-title: story-create-local-selenium-project
+title: story-create-delete-local-waml-project
+#type: fragment
 steps:
    - include: params
    - include: action-register
-   - include: action-create-local-selenium-project
+   - include: action-create-local-waml-project
    - include: action-delete-project
    - include: action-delete-account
