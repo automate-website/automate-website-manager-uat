@@ -10,5 +10,6 @@ steps:
    - include: params-project-edit-page
    - include: params-scenarios-page
    - include: params-scenario-edit-page
+   - include: params-jobs-page
    - include: params-data
          

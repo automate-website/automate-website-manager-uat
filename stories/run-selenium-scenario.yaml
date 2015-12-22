@@ -1,0 +1,11 @@
+title: story-run-selenium-scenario
+type: fragment
+steps:
+   - include: params
+   - include: action-register
+   - include: action-create-local-selenium-project
+   - include: action-create-scenario
+   - include: goto-scenario-edit-page
+   - include: action-edit-scenario
+   - include: action-run-scenario
+   - include: action-delete-account

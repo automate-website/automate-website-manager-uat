@@ -2,4 +2,6 @@ title: params-jobs-page
 type: fragment
 steps:
    - store:
-         jobsPageUrl: ${siteAppUrl}/jobs
+        activityPageSelectorJobContainerTitle: ${siteSelectorContainerMain} h3.jobs-overview-job-title
+   - store:
+        jobsPageUrl: ${siteAppUrl}/jobs

@@ -13,4 +13,6 @@ steps:
       scenariosPageControlTextEditScenario: Edit
   - store:
       scenariosPageSelectorDropdownControlElements : ${siteSelectorContainerMain} li[role=menuitem] a
+  - store:
+      scenariosPageScenarioContainerSelectorControlRun: a[ng-click="jobCreate(scenario)"]
   

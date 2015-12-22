@@ -1,0 +1,14 @@
+title: action-run-scenario
+type: fragment
+steps:
+   - include: ensure-at-scenarios-page
+   - waitUntilAnyOfElementsContainsTextAndClickBasedOn:
+        selector: ${scenariosPageSelectorScenarioContainer}
+        text: ${dataCurrentScenarioTitle}
+        ms: ${siteTimeout}
+        basedOnSelector: ${scenariosPageScenarioContainerSelectorControlRun}
+   - include: goto-jobs-page
+   - waitUntilAnyOfElementsContainsText:
+        selector: ${activityPageSelectorJobContainerTitle}
+        text: "${dataCurrentProjectTitle} - ${dataCurrentScenarioTitle}"
+        ms: ${siteTimeout}

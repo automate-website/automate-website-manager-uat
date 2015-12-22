@@ -3,5 +3,5 @@ type: fragment
 steps:
     - waitUntilAnyOfElementsContainsText:
          selector: ${siteAppSelectorContainerHeader} h1.navbar-header a
-         text: Your account
+         text: Activity
          ms: ${siteTimeout}
