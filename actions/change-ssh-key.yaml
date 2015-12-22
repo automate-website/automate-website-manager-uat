@@ -1,0 +1,13 @@
+title: action-change-ssh-key
+type: fragment
+steps:
+   - include: goto-account-page
+   - setValue:
+         selector: ${accountPageSelectorInputSshKey}
+         value: ${dataCurrentUserSshKey}
+   - click: ${accountPageSelectorControlUpdateAccount}
+   - include: goto-account-page
+   - waitUntilAnyOfElementsHasValue:
+         selector: ${accountPageSelectorInputSshKey}
+         value: ${dataCurrentUserSshKey}
+         ms: ${siteTimeout}

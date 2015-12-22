@@ -1,5 +1,5 @@
 title: story-create-delete-local-waml-project
-#type: fragment
+type: fragment
 steps:
    - include: params
    - include: action-register

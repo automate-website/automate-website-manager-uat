@@ -1,0 +1,7 @@
+title: story-change-ssh-key
+type: fragment
+steps:
+   - include: params
+   - include: action-register
+   - include: action-change-ssh-key
+   - include: action-delete-account

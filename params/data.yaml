@@ -13,3 +13,7 @@ steps:
         dataNewUserPassword: "${ $.random.string() }"
    - store:
         dataCurrentProjectTitle: ${ $.random.word() }
+   - store:
+        dataCurrentUserSshKey: ssh-key
+   - store:
+        dataCurrentRepository: git@bitbucket.org:automate-website/automate-website-manager-uat-example.git
