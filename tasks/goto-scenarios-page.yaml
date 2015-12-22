@@ -1,0 +1,9 @@
+title: goto-scenarios-page
+type: fragment
+steps:
+    - include: goto-projects-page
+    - waitUntilAnyOfElementsContainsTextAndClick:
+        selector: ${projectsPageSelectorInnerProjectContainer}
+        text: ${dataCurrentProjectTitle}
+        ms: ${siteTimeout}
+    - include: ensure-at-scenarios-page

@@ -1,4 +1,4 @@
-title: ensure-at-project-page
+title: ensure-at-scenarios-page
 type: fragment
 steps:
    - waitForVisible:

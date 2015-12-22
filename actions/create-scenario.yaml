@@ -1,0 +1,11 @@
+title: action-create-scenario
+type: fragment
+steps:
+    - include: goto-scenarios-page
+    - waitUntilAnyOfElementsVisibleAndClick:
+        selector: ${scenariosPageSelectorControlNew}
+        ms: ${siteTimeout}
+    - waitUntilAnyOfElementsContainsText:
+        selector: ${scenariosPageSelectorScenarioContainer}
+        text: ${dataCurrentScenarioTitle}
+        ms: ${siteTimeout}

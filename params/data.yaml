@@ -31,3 +31,5 @@ NM+YkPDe5TSouxrLjf6Te/4jCMxTCu2SbMfgwBd4oEkR
 -----END RSA PRIVATE KEY-----"
    - store:
         dataCurrentRepository: git@bitbucket.org:automate-website/automate-website-manager-uat-example.git
+   - store:
+        dataCurrentScenarioTitle: New scenario

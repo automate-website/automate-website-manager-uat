@@ -1,0 +1,10 @@
+title: story-create-delete-selenium-scenario
+type: fragment
+steps:
+   - include: params
+   - include: action-register
+   - include: action-create-local-selenium-project
+   - include: action-create-scenario
+   - include: action-delete-scenario
+   - include: action-delete-project
+   - include: action-delete-account

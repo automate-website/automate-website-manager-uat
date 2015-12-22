@@ -10,6 +10,8 @@ steps:
   - store:
       projectsPageSelectorControlExisting: ${siteSelectorContainerMain} div.project-panel
   - store:
+      projectsPageSelectorInnerProjectContainer: ${siteSelectorContainerMain} a.project-panel-inner
+  - store:
       projectsPageModalSelectorControl: div.modal-dialog button
   - store:
       projectsPageModalControlTextDeleteProject: Delete project

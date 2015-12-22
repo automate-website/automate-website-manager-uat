@@ -1,0 +1,6 @@
+title: ensure-at-scenario-edit-page
+type: fragment
+steps:
+   - waitForVisible:
+        selector: ${siteSelectorControlNavigateToPage}[title="${scenarioEditPageHeaderTitle}"]
+        ms: ${siteTimeout}

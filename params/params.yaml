@@ -8,5 +8,7 @@ steps:
    - include: params-register-page
    - include: params-change-password-page
    - include: params-project-edit-page
+   - include: params-scenarios-page
+   - include: params-scenario-edit-page
    - include: params-data
          

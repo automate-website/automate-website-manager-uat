@@ -1,0 +1,17 @@
+title: action-delete-scenario
+type: fragment
+steps:
+   - include: goto-scenarios-page
+   - waitUntilAnyOfElementsContainsTextAndClickBasedOn:
+        selector: ${scenariosPageSelectorScenarioContainer}
+        text: ${dataCurrentScenarioTitle}
+        ms: ${siteTimeout}
+        basedOnSelector: ${scenariosPageScenarioContainerSelectorDropdownControl}
+   - waitUntilAnyOfElementsContainsTextAndClick:
+        selector: li[role=menuitem] a
+        text: ${scenariosPageControlTextDeleteScenario}
+        ms: ${siteTimeout} 
+   - waitUntilNoneOfElementsContainsText:
+        selector: ${scenariosPageSelectorScenarioContainer}
+        text: ${dataCurrentScenarioTitle}
+        ms: ${siteTimeout}

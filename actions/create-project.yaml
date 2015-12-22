@@ -18,7 +18,7 @@ title: save-project
 type: fragment
 steps:
    - click: ${projectPageSelectorControlSave}
-   - include: ensure-at-project-page
+   - include: ensure-at-scenarios-page
 ---
 title: action-create-local-selenium-project
 type: fragment

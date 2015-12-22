@@ -8,8 +8,6 @@ steps:
    - store:
         siteAppUrl: ${siteBaseUrl}/app
    - store:
-        dataCurrentScenarioTitle: New scenario
-   - store:
         dataCurrentSshKey: Secr3t
    - store:
         siteAppSelectorContainerHeader: div[ui-view=navbar]
