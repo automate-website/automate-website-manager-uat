@@ -54,7 +54,7 @@ Scenarios may be executed using [WebRobotJS] by running:
 	`$ node index.js --scenarioPath="<project path>"`
 
 ### Runner Path
-The path to the [WebRobotJS];
+The path to the [WebRobotJS]
 
 ### Project Path
 The path to the manager user acceptance tests project.
