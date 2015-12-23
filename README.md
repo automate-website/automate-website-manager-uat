@@ -50,8 +50,8 @@ Scenarios may be executed standalone.
 ## Local Execution
 Scenarios may be executed using [WebRobotJS] by running:
 
-	`$ cd <runner path>`
-	`$ node index.js --scenarioPath="<project path>"`
+	$ cd <runner path>
+	$ node index.js --scenarioPath="<project path>"
 
 ### Runner Path
 The path to the [WebRobotJS]
