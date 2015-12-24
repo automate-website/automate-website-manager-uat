@@ -18,7 +18,21 @@ steps:
    - store:
         dataCurrentProjectTitle: ${ $.random.word() }
    - store:
-        dataCurrentUserSshKey: "-----BEGIN RSA PRIVATE KEY-----MIICXQIBAAKBgQDKp1X19Ro42GbZpl1PVBqMLyiVICuqy/gf34jXR6hz8bHUGH59+nBR1RHtA7T3xwuFfoy+tRMpqbPC3gXzcasFYDEJec4sFkN+6+l/koOOEElb4G/T5wOhA41vBDGdwvNCxgC+RhmWlpi8Zd+WGwCTH6GKm3E1DrBxkB3Cw3QkwIDAQABAoGBAJ1AN73BUXWmxjhBlcpGssrwlQcSjY/c8k6ZQC/81MQTWjAASbcrrBhzw5Ms+zIBa/lMd55MF/COVITzj56WJ2OEjRouP94gmK9da1H0t+1ZFeg7PQzQJaO1qOzTnXsPGq9u07WYBb90szEeSgNHVbIcE3da4OBe9RILLJnS8VkBAkEA76m4QEqM1xKWvmWVttRJvkQmg/s9j1S1wQrAaB1i0gXSfbanWfo0sPkTGm20y/jBxZQTLtnu/wRwc4pDXtnkUwJBANh3x1N1kK+lnadVyO96nurlrcTlES/PCNhf67SIKUb6pkPeKL/Fm6KzpjJYAHPzI5pJ8oXcXoRy/iExoYb+2sECQQDSA0KPLATQ7twjyfbwuIRKc4PgwceHEy8WE2rZkW6oJiv2t5lcsnF75zeDQEFfQAPlNEW/F4Bj/irgRHeW5Y87AkAjosxgs/kGwYgLtTaoHhKtbvRFdsR2j2nQXTIrfUL2WWsnvxoMQBbYGSUiIpSogf15d/UCDn5M5bVqd4Y0+B3BAkBsy4uQLXs+PZT67bKRKhiH0yz1Zz5pZHuqAY8EW29xNM+YkPDe5TSouxrLjf6Te/4jCMxTCu2SbMfgwBd4oEkR-----END RSA PRIVATE KEY-----"
+        dataCurrentUserSshKey: "-----BEGIN RSA PRIVATE KEY-----
+MIICXQIBAAKBgQDKp1X19Ro42GbZpl1PVBqMLyiVICuqy/gf34jXR6hz8bHUGH59
++nBR1RHtA7T3xwuFfoy+tRMpqbPC3gXzcasFYDEJec4sFkN+6+l/koOOEElb4G/T
+5wgOhA41vBDGdwvNCxgC+RhmWlpi8Zd+WGwCTH6GKm3E1DrBxkB3Cw3QkwIDAQAB
+AoGBAJ1AN73BUXWmxjhBlcpGssrwlQcSjY/c8k6ZQC/81MQTWjAASbcrrBhzw5Ms
++zIBa/lMd55MF/COVITzj56WJ2OEjRouP94gmK9da1H0t+1ZFeg7PQzQJaO1qOzT
+nXsPGq9u07WYBb90szEeSgNHVbIcE3da4OBe9RILLJnS8VkBAkEA76m4QEqM1xKW
+vmWVttRJvkQmg/s9j1S1wQrAaB1i0gXSfbanWfo0sPkTGm20y/jBxZQTLtnu/wRw
+c4pDXtnkUwJBANh3x1N1kK+lnadVyO96nurlrcTlES/PCNhf67SIKUb6pkPeKL/F
+m6KzpjJYAHPzI5pJ8oXcXoRy/iExoYb+2sECQQDSA0KPLATQ7twjyfbwuIRKc4Pg
+wceHEy8WE2rZkW6oJiv2t5lcsnF75zeDQEFfQAPlNEW/F4Bj/irgRHeW5Y87AkAj
+osxgs/kGwYgLtTaoHhKtbvRFdsR2j2nQXTIrfUL2WWsnvxoMQBbYGSUiIpSogf15
+d/UCDn5M5bVqd4Y0+B3BAkBsy4uQLXs+PZT67bKRKhiH0yz1Zz5pZHuqAY8EW29x
+NM+YkPDe5TSouxrLjf6Te/4jCMxTCu2SbMfgwBd4oEkR
+-----END RSA PRIVATE KEY-----"
    - store:
         dataCurrentRepository: git@bitbucket.org:automate-website/automate-website-manager-uat-example.git
    - store:
