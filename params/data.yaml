@@ -10,10 +10,6 @@ steps:
    - store:
         dataCurrentUserPassword: "${ $.random.string() }"
    - store:
-        dataCurrentUserEmail: integrationtest1@automate.website
-   - store:
-        dataCurrentUserPassword: 9mExkGczQuj8Rq7cIfhz
-   - store:
         dataNewUserPassword: "${ $.random.string() }"
    - store:
         dataCurrentProjectTitle: ${ $.random.word() }
