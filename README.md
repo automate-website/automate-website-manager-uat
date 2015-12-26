@@ -1,5 +1,5 @@
 # Manager User Acceptance Tests
-This project contains manager application user acceptance tests written in web automation markup language.
+This project contains manager application user acceptance tests written in [web automation markup language].
 
 Project scenarios can be executed using [WebRobotJS].
 
@@ -63,3 +63,4 @@ The path to the manager user acceptance tests project.
 [changelog]: CHANGELOG.md
 [params.yaml]: params/params.yaml
 [data.yaml]: params/data.yaml
+[web automation markup language]: https://github.com/automate-website/web-automation-markup-language
