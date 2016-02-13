@@ -1,5 +1,5 @@
 title: goto-login-page
-type: fragment
+fragment: true
 steps:
     - url: ${loginPageUrl}
     - include: ensure-at-login-page

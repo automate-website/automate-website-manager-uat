@@ -1,5 +1,5 @@
 title: action-edit-scenario
-type: fragment
+fragment: true
 steps:
    - include: ensure-at-scenario-edit-page
    - include: edit-scenario-basics
@@ -8,7 +8,7 @@ steps:
    - include: ensure-at-scenarios-page
 ---
 title: edit-scenario-basics
-type: fragment
+fragment: true
 steps:
     - ensure: ${scenarioEditPageSelectorInputTitle}
     - enter:
@@ -22,7 +22,7 @@ steps:
         text: ${scenarioEditPageTextControlSeleniumDialect}
 ---
 title: edit-scenario-steps
-type: fragment
+fragment: true
 steps:
     - click: ${scenarioEditPageSelectorControlAddStep}
     - click: ${scenarioEditPageSelectorControlOpen}
@@ -31,7 +31,7 @@ steps:
         input: ${dataCurrentScenarioBaseUrl}
 ---
 title: save-scenario
-type: fragment
+fragment: true
 steps:
     - click:
         selector: ${scenarioEditPageSelectorControlSave}

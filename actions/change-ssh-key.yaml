@@ -1,5 +1,5 @@
 title: action-change-ssh-key
-type: fragment
+fragment: true
 steps:
    - include: goto-account-page
    - enter:

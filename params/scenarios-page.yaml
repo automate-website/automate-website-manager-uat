@@ -1,5 +1,5 @@
 title: params-scenarios-page
-type: fragment
+fragment: true
 steps:
   - store:
       scenariosPageSelectorControlNew: ${siteSelectorContainerMain} a.btn-primary[ng-click="scenarioCreate(project)"]

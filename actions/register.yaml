@@ -1,5 +1,5 @@
 title: action-register
-type: fragment
+fragment: true
 steps:
     - include: goto-register-page
     - enter:

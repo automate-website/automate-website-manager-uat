@@ -1,5 +1,5 @@
 title: ensure-at-register-page
-type: fragment
+fragment: true
 steps:
     - ensure:
         selector: ${registerPageSelectorContainer} h1

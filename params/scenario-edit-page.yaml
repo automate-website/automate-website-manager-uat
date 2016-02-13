@@ -1,5 +1,5 @@
 title: params-scenario-edit-page
-type: fragment
+fragment: true
 steps:
    - store:
         scenarioEditPageHeaderTitle: Edit scenario

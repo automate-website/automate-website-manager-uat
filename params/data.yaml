@@ -1,5 +1,5 @@
 title: params-data
-type: fragment
+fragment: true
 steps:
    - store:
         dataCurrentUserFirstName: ${ $.random.first() }

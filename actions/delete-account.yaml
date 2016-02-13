@@ -1,5 +1,5 @@
 title: action-delete-account
-type: fragment
+fragment: true
 steps:
     - include: goto-account-page
     - click:

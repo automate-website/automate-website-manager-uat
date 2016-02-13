@@ -1,5 +1,5 @@
 title: params-login-page
-type: fragment
+fragment: true
 steps:
    - store:
          loginPageUrl: ${siteAppUrl}/login

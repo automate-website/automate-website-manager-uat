@@ -1,5 +1,5 @@
 title: params
-type: fragment
+fragment: true
 steps:
    - include: params-site
    - include: params-login-page

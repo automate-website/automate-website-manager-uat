@@ -1,5 +1,5 @@
 title: params-site
-type: fragment
+fragment: true
 steps:
    - store:
         siteBaseUrl: https://automate.website

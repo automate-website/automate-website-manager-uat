@@ -1,5 +1,5 @@
 title: ensure-at-jobs-page
-type: fragment
+fragment: true
 steps:
     - ensure:
          selector: ${siteAppSelectorContainerHeader} h1.navbar-header a

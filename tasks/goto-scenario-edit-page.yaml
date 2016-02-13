@@ -1,5 +1,5 @@
 title: goto-scenario-edit-page
-type: fragment
+fragment: true
 steps:
     - click:
         parent:

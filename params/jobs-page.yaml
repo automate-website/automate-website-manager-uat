@@ -1,5 +1,5 @@
 title: params-jobs-page
-type: fragment
+fragment: true
 steps:
    - store:
         activityPageSelectorJobContainerTitle: ${siteSelectorContainerMain} h3.jobs-overview-job-title

@@ -1,5 +1,5 @@
 title: goto-projects-page
-type: fragment
+fragment: true
 steps:
     - url: ${projectsPageUrl}
     - include: ensure-at-projects-page

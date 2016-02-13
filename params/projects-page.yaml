@@ -1,5 +1,5 @@
 title: params-projects-page
-type: fragment
+fragment: true
 steps:
   - store:
       projectsPageUrl: ${siteAppUrl}/projects

@@ -1,4 +1,4 @@
 title: goto-home-page
-type: fragment
+fragment: true
 steps:
     - include: goto-projects-page

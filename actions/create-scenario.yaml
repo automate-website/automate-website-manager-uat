@@ -1,5 +1,5 @@
 title: action-create-scenario
-type: fragment
+fragment: true
 steps:
     - include: goto-scenarios-page
     - click: ${scenariosPageSelectorControlNew}

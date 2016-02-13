@@ -1,5 +1,5 @@
 title: goto-scenarios-page
-type: fragment
+fragment: true
 steps:
     - include: goto-projects-page
     - click:
