@@ -1,5 +1,4 @@
 title: story-create-delete-selenium-scenario
-timeout: ${siteTimeout}
 steps:
    - include: params
    - include: action-register

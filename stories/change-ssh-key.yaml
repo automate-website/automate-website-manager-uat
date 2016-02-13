@@ -1,5 +1,4 @@
 title: story-change-ssh-key
-timeout: ${siteTimeout}
 steps:
    - include: params
    - include: action-register

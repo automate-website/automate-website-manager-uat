@@ -1,5 +1,4 @@
 title: story-create-delete-local-selenium-project
-timeout: ${siteTimeout}
 steps:
    - include: params
    - include: action-register
