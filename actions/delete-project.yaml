@@ -2,16 +2,18 @@ title: action-delete-project
 type: fragment
 steps:
     - include: goto-projects-page
-    - moveToAnyOfElementsContainsText:
+    - move:
         selector: ${projectsPageSelectorControlExisting}
         text: ${dataCurrentProjectTitle}
-    - waitUntilAnyOfElementsContainsTextAndClickBasedOn:
-        selector: ${projectsPageSelectorControlExisting}
-        text: ${dataCurrentProjectTitle}
-        basedOnSelector: ${projectsPageProjectContainerSelectorControlDeleteProject}
-    - waitUntilAnyOfElementsContainsTextAndClick:
+    - click:
+        selector: ${projectsPageProjectContainerSelectorControlDeleteProject}
+        parent:
+          selector: ${projectsPageSelectorControlExisting}
+          text: ${dataCurrentProjectTitle}
+    - click:
         selector: ${projectsPageModalSelectorControl}
         text: ${projectsPageModalControlTextDeleteProject}
-    - waitUntilNoneOfElementsContainsText:
-        selector: ${projectsPageSelectorControlExisting}
-        text: ${dataCurrentProjectTitle}
+# currently not supported by waml draft-02
+#    - waitUntilNoneOfElementsContainsText:
+#        selector: ${projectsPageSelectorControlExisting}
+#        text: ${dataCurrentProjectTitle}

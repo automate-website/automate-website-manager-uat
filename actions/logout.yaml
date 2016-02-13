@@ -2,7 +2,7 @@ title: action-logout
 type: fragment
 steps:
   - include: goto-account-page
-  - waitUntilAnyOfElementsContainsTextAndClick:
+  - click:
       selector: ${accountPageSelectorControllLogout}
       text: ${accountPageControlTextLogout}
   - include: ensure-at-login-page

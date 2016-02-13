@@ -2,13 +2,15 @@ title: action-delete-scenario
 type: fragment
 steps:
    - include: goto-scenarios-page
-   - waitUntilAnyOfElementsContainsTextAndClickBasedOn:
-        selector: ${scenariosPageSelectorScenarioContainer}
-        text: ${dataCurrentScenarioTitle}
-        basedOnSelector: ${scenariosPageScenarioContainerSelectorDropdownControl}
-   - waitUntilAnyOfElementsContainsTextAndClick:
+   - click:
+        parent:
+          selector: ${scenariosPageSelectorScenarioContainer}
+          text: ${dataCurrentScenarioTitle}
+        selector: ${scenariosPageScenarioContainerSelectorDropdownControl}
+   - click:
         selector: ${scenariosPageSelectorDropdownControlElements}
         text: ${scenariosPageControlTextDeleteScenario}
-   - waitUntilNoneOfElementsContainsText:
-        selector: ${scenariosPageSelectorScenarioContainer}
-        text: ${dataCurrentScenarioTitle}
+# currently not supported by waml draft-02
+#   - waitUntilNoneOfElementsContainsText:
+#        selector: ${scenariosPageSelectorScenarioContainer}
+#        text: ${dataCurrentScenarioTitle}

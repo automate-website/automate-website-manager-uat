@@ -2,8 +2,7 @@ title: action-create-scenario
 type: fragment
 steps:
     - include: goto-scenarios-page
-    - waitUntilAnyOfElementsVisibleAndClick:
-        selector: ${scenariosPageSelectorControlNew}
-    - waitUntilAnyOfElementsContainsText:
+    - click: ${scenariosPageSelectorControlNew}
+    - click:
         selector: ${scenariosPageSelectorScenarioContainer}
         text: ${dataCurrentScenarioTitle}

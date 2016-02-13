@@ -1,6 +1,6 @@
 title: ensure-at-login-page
 type: fragment
 steps:
-    - waitUntilAnyOfElementsContainsText:
+    - ensure:
         selector: ${loginPageSelectorContainer} h1
         text: ${loginPageHeaderTitle}

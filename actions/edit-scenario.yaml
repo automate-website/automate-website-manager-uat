@@ -10,16 +10,14 @@ steps:
 title: edit-scenario-basics
 type: fragment
 steps:
-    - waitForVisible:
+    - ensure: ${scenarioEditPageSelectorInputTitle}
+    - enter:
         selector: ${scenarioEditPageSelectorInputTitle}
-        ms: ${siteTimeout}
-    - setValue:
-        selector: ${scenarioEditPageSelectorInputTitle}
-        value: ${dataCurrentScenarioTitle}
-    - setValue:
+        input: ${dataCurrentScenarioTitle}
+    - enter:
         selector: ${scenarioEditPageSelectorInputBaseUrl}
-        value: ${dataCurrentScenarioBaseUrl}
-    - selectByVisibleText:
+        input: ${dataCurrentScenarioBaseUrl}
+    - select:
         selector: ${scenarioEditPageSelectorControlSeleniumDialect}
         text: ${scenarioEditPageTextControlSeleniumDialect}
 ---
@@ -28,13 +26,13 @@ type: fragment
 steps:
     - click: ${scenarioEditPageSelectorControlAddStep}
     - click: ${scenarioEditPageSelectorControlOpen}
-    - setValue:
+    - enter:
         selector: ${scenarioEditPageSelectorInputStepParameters}
-        value: ${dataCurrentScenarioBaseUrl}
+        input: ${dataCurrentScenarioBaseUrl}
 ---
 title: save-scenario
 type: fragment
 steps:
-    - anyOfElementsContainsTextAndClick:
+    - click:
         selector: ${scenarioEditPageSelectorControlSave}
         text: ${scenarioEditPageTextInputSave}

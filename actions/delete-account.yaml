@@ -2,10 +2,10 @@ title: action-delete-account
 type: fragment
 steps:
     - include: goto-account-page
-    - waitUntilAnyOfElementsContainsTextAndClick:
+    - click:
         selector: ${accountPageSelectorControl}
         text: ${accountPageControlTextDeleteAccount}
-    - waitUntilAnyOfElementsContainsTextAndClick:
+    - click:
         selector: ${accountPageModalSelectorControl}
         text: ${accountPageModalControlTextDeleteAccount}
     - include: ensure-at-login-page

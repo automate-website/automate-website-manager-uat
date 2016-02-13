@@ -1,11 +1,12 @@
 title: goto-scenario-edit-page
 type: fragment
 steps:
-    - waitUntilAnyOfElementsContainsTextAndClickBasedOn:
-        selector: ${scenariosPageSelectorScenarioContainer}
-        text: ${dataCurrentScenarioTitle}
-        basedOnSelector: ${scenariosPageScenarioContainerSelectorDropdownControl}
-    - waitUntilAnyOfElementsContainsTextAndClick:
+    - click:
+        parent:
+          selector: ${scenariosPageSelectorScenarioContainer}
+          text: ${dataCurrentScenarioTitle}
+        selector: ${scenariosPageScenarioContainerSelectorDropdownControl}
+    - click:
         selector: ${scenariosPageSelectorDropdownControlElements}
         text: ${scenariosPageControlTextEditScenario}
     - include: ensure-at-scenario-edit-page

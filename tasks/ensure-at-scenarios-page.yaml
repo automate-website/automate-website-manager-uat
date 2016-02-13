@@ -1,5 +1,4 @@
 title: ensure-at-scenarios-page
 type: fragment
 steps:
-   - waitForVisible:
-        selector: ${siteSelectorControlNavigateToPage}[title="${dataCurrentProjectTitle}"]
+   - ensure: ${siteSelectorControlNavigateToPage}[title="${dataCurrentProjectTitle}"]

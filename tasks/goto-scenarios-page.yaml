@@ -2,7 +2,7 @@ title: goto-scenarios-page
 type: fragment
 steps:
     - include: goto-projects-page
-    - waitUntilAnyOfElementsContainsTextAndClick:
+    - click:
         selector: ${projectsPageSelectorInnerProjectContainer}
         text: ${dataCurrentProjectTitle}
     - include: ensure-at-scenarios-page

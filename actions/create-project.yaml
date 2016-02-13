@@ -2,14 +2,12 @@ title: configure-project
 type: fragment
 steps:
    - include: ensure-at-projects-page
-   - waitForVisible:
-        selector: ${projectsPageSelectorControlNew}
+   - ensure: ${projectsPageSelectorControlNew}
    - click: ${projectsPageSelectorControlNew}
-   - waitForVisible:
+   - ensure: ${projectPageSelectorInputTitle}
+   - enter:
         selector: ${projectPageSelectorInputTitle}
-   - setValue:
-        selector: ${projectPageSelectorInputTitle}
-        value: ${dataCurrentProjectTitle}
+        input: ${dataCurrentProjectTitle}
    - click: ${projectPageSelectorControlColorSecond}
 ---
 title: save-project

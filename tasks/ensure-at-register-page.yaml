@@ -1,6 +1,6 @@
 title: ensure-at-register-page
 type: fragment
 steps:
-    - waitUntilAnyOfElementsContainsText:
+    - ensure:
         selector: ${registerPageSelectorContainer} h1
         text: ${registerPageHeaderTitle}

@@ -2,11 +2,12 @@ title: action-run-scenario
 type: fragment
 steps:
    - include: ensure-at-scenarios-page
-   - waitUntilAnyOfElementsContainsTextAndClickBasedOn:
-        selector: ${scenariosPageSelectorScenarioContainer}
-        text: ${dataCurrentScenarioTitle}
-        basedOnSelector: ${scenariosPageScenarioContainerSelectorControlRun}
+   - click:
+        parent:
+          selector: ${scenariosPageSelectorScenarioContainer}
+          text: ${dataCurrentScenarioTitle}
+        selector: ${scenariosPageScenarioContainerSelectorControlRun}
    - include: goto-jobs-page
-   - waitUntilAnyOfElementsContainsText:
+   - ensure:
         selector: ${activityPageSelectorJobContainerTitle}
         text: "${dataCurrentProjectTitle} - ${dataCurrentScenarioTitle}"
