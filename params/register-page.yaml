@@ -3,13 +3,8 @@ type: fragment
 steps:
    - store:
          registerPageUrl: ${siteAppUrl}/signup
-   - store:
          registerPageSelectorContainer: "div.signup-panel"
-   - store:
          registerPageSelectorInputEmail: "${registerPageSelectorContainer} input#inputEmail"
-   - store:
          registerPageSelectorInputPassword: "${registerPageSelectorContainer} input#inputPassword"
-   - store:
          registerPageSelectorControlSignup: ${registerPageSelectorContainer} button[type=submit]
-   - store:
          registerPageHeaderTitle: Sign up

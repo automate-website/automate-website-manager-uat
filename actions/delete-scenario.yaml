@@ -5,13 +5,10 @@ steps:
    - waitUntilAnyOfElementsContainsTextAndClickBasedOn:
         selector: ${scenariosPageSelectorScenarioContainer}
         text: ${dataCurrentScenarioTitle}
-        ms: ${siteTimeout}
         basedOnSelector: ${scenariosPageScenarioContainerSelectorDropdownControl}
    - waitUntilAnyOfElementsContainsTextAndClick:
         selector: ${scenariosPageSelectorDropdownControlElements}
         text: ${scenariosPageControlTextDeleteScenario}
-        ms: ${siteTimeout} 
    - waitUntilNoneOfElementsContainsText:
         selector: ${scenariosPageSelectorScenarioContainer}
         text: ${dataCurrentScenarioTitle}
-        ms: ${siteTimeout}

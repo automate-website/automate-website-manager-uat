@@ -3,20 +3,12 @@ type: fragment
 steps:
    - store:
          accountPageUrl: ${siteAppUrl}/account
-   - store:
          accountPageSelectorControllLogout: button
-   - store:
          accountPageControlTextLogout: Logout
-   - store:
          accountPageControlTextDeleteAccount: Delete account
-   - store:
          accountPageSelectorControl: button
-   - store:
          accountPageModalControlTextDeleteAccount: Delete account
-   - store:
          accountPageModalSelectorControl: div.modal-dialog button
-   - store:
          accountPageSelectorInputSshKey: textarea[ng-model="user.sshkey"]
-   - store:
          accountPageSelectorControlUpdateAccount: button[ng-click="editUser(user)"]
-         
+

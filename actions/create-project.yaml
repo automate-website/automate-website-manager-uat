@@ -4,11 +4,9 @@ steps:
    - include: ensure-at-projects-page
    - waitForVisible:
         selector: ${projectsPageSelectorControlNew}
-        ms: ${siteTimeout}
    - click: ${projectsPageSelectorControlNew}
    - waitForVisible:
         selector: ${projectPageSelectorInputTitle}
-        ms: ${siteTimeout}
    - setValue:
         selector: ${projectPageSelectorInputTitle}
         value: ${dataCurrentProjectTitle}

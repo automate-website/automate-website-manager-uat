@@ -4,4 +4,3 @@ steps:
     - waitUntilAnyOfElementsContainsText:
         selector: ${loginPageSelectorContainer} h1
         text: ${loginPageHeaderTitle}
-        ms: ${siteTimeout}

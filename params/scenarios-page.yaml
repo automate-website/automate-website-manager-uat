@@ -3,16 +3,10 @@ type: fragment
 steps:
   - store:
       scenariosPageSelectorControlNew: ${siteSelectorContainerMain} a.btn-primary[ng-click="scenarioCreate(project)"]
-  - store:
       scenariosPageSelectorScenarioContainer: ${siteSelectorContainerMain} div.project-scenario-panel
-  - store:
       scenariosPageScenarioContainerSelectorDropdownControl: button.dropdown-toggle
-  - store:
       scenariosPageControlTextDeleteScenario: Delete
-  - store:
       scenariosPageControlTextEditScenario: Edit
-  - store:
       scenariosPageSelectorDropdownControlElements : ${siteSelectorContainerMain} li[role=menuitem] a
-  - store:
       scenariosPageScenarioContainerSelectorControlRun: a[ng-click="jobCreate(scenario)"]
   

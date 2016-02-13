@@ -3,21 +3,12 @@ type: fragment
 steps:
    - store:
         scenarioEditPageHeaderTitle: Edit scenario
-   - store:
         scenarioEditPageSelectorInputTitle: "${siteSelectorContainerMain} input#scenarioTitle"
-   - store:
         scenarioEditPageSelectorInputBaseUrl: "${siteSelectorContainerMain} input#baseUrl"
-   - store:
         scenarioEditPageSelectorControlSeleniumDialect: "${siteSelectorContainerMain} select#dialect"
-   - store:
         scenarioEditPageTextControlSeleniumDialect: SELENIUM
-   - store:
         scenarioEditPageSelectorControlAddStep: a[ng-click="addStep()"]
-   - store:
         scenarioEditPageSelectorControlOpen: a[btn-radio="'open'"]
-   - store:
         scenarioEditPageSelectorInputStepParameters: input[ng-model="step.parameters"]
-   - store:
         scenarioEditPageSelectorControlSave: ${siteSelectorContainerMain} button[type=submit]
-   - store:
         scenarioEditPageTextInputSave: Save

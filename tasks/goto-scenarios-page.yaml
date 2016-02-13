@@ -5,5 +5,4 @@ steps:
     - waitUntilAnyOfElementsContainsTextAndClick:
         selector: ${projectsPageSelectorInnerProjectContainer}
         text: ${dataCurrentProjectTitle}
-        ms: ${siteTimeout}
     - include: ensure-at-scenarios-page

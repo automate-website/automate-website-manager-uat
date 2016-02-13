@@ -5,5 +5,4 @@ steps:
   - waitUntilAnyOfElementsContainsTextAndClick:
       selector: ${accountPageSelectorControllLogout}
       text: ${accountPageControlTextLogout}
-      ms: ${siteTimeout}
   - include: ensure-at-login-page

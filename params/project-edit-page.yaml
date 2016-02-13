@@ -3,28 +3,15 @@ type: fragment
 steps:
    - store:
         projectPageSelectorInputTitle: "${siteSelectorContainerMain} input#projectTitle"
-   - store:
         projectPageSelectorContainerColorPicker: ${siteSelectorContainerMain} div.color-picker
-   - store:
         projectPageSelectorControlColorSecond: ${projectPageSelectorContainerColorPicker} label:nth-child(2)
-   - store:
         projectPageSelectorControlDialect: ${siteSelectorContainerMain} div.btn-group
-   - store:
         projectPageSelectorControlDialectSelenium: ${projectPageSelectorControlDialect} label[uib-btn-radio*=SELENIUM]
-   - store:
         projectPageSelectorControlDialectWAML: ${projectPageSelectorControlDialect} label[uib-btn-radio*=AUTOMATE_WEBSITE]
-   - store:
         projectPageSelectorControlType: ${siteSelectorContainerMain} div.btn-group
-   - store:
         projectPageSelectorControlTypeLocal: ${projectPageSelectorControlType} label[uib-btn-radio*=LOCAL]
-   - store:
         projectPageSelectorControlTypHosted: ${projectPageSelectorControlType} label[uib-btn-radio*=HOSTED_GIT]
-   - store:
         projectPageSelectorControlSave: ${siteSelectorContainerMain} button[type=submit]
-   - store:
         projectPageSelectorInputRepositoryLocation: "${siteSelectorContainerMain} input#inputProjectRepositorySettingsLocation"
-   - store:
         projectPageSelectorInputRepositoryBranchName: "${siteSelectorContainerMain} input#inputProjectRepositorySettingsBranchName"
-   - store:
         projectPageSelectorInputRepositoryDirectory: "${siteSelectorContainerMain} input#inputProjectRepositorySettingsDirectory"
-        

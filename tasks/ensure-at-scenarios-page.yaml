@@ -3,4 +3,3 @@ type: fragment
 steps:
    - waitForVisible:
         selector: ${siteSelectorControlNavigateToPage}[title="${dataCurrentProjectTitle}"]
-        ms: ${siteTimeout}

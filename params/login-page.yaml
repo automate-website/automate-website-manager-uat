@@ -3,13 +3,8 @@ type: fragment
 steps:
    - store:
          loginPageUrl: ${siteAppUrl}/login
-   - store:
          loginPageSelectorContainer: "div.login-panel"
-   - store:
          loginPageSelectorInputEmail: "${loginPageSelectorContainer} input#inputEmail"
-   - store:
          loginPageSelectorInputPassword: "${loginPageSelectorContainer} input#inputPassword"
-   - store:
          loginPageSelectorControlLogin: ${loginPageSelectorContainer} button[type=submit]
-   - store:
          loginPageHeaderTitle: Sign in

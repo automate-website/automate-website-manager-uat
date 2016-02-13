@@ -5,9 +5,7 @@ steps:
     - waitUntilAnyOfElementsContainsTextAndClick:
         selector: ${accountPageSelectorControl}
         text: ${accountPageControlTextDeleteAccount}
-        ms: ${siteTimeout}
     - waitUntilAnyOfElementsContainsTextAndClick:
         selector: ${accountPageModalSelectorControl}
         text: ${accountPageModalControlTextDeleteAccount}
-        ms: ${siteTimeout}
     - include: ensure-at-login-page

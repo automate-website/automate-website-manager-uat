@@ -3,17 +3,10 @@ type: fragment
 steps:
   - store:
       projectsPageUrl: ${siteAppUrl}/projects
-  - store:
       projectsPageHeaderTitle: Projects
-  - store:
       projectsPageSelectorControlNew: ${siteSelectorContainerMain} a.project-panel-new
-  - store:
       projectsPageSelectorControlExisting: ${siteSelectorContainerMain} div.project-panel
-  - store:
       projectsPageSelectorInnerProjectContainer: ${siteSelectorContainerMain} a.project-panel-inner
-  - store:
       projectsPageModalSelectorControl: div.modal-dialog button
-  - store:
       projectsPageModalControlTextDeleteProject: Delete project
-  - store:
       projectsPageProjectContainerSelectorControlDeleteProject: div.options i.fa-trash-o

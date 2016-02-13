@@ -3,4 +3,3 @@ type: fragment
 steps:
    - waitForVisible:
         selector: ${siteSelectorControlNavigateToPage}[title="${scenarioEditPageHeaderTitle}"]
-        ms: ${siteTimeout}

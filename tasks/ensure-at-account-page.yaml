@@ -4,4 +4,3 @@ steps:
     - waitUntilAnyOfElementsContainsText:
          selector: ${siteAppSelectorContainerHeader} h1.navbar-header a
          text: Your account
-         ms: ${siteTimeout}
