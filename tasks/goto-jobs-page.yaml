@@ -1,5 +1,5 @@
-title: goto-jobs-page
+name: goto-jobs-page
 fragment: true
 steps:
-    - url: ${jobsPageUrl}
+    - open: ${jobsPageUrl}
     - include: ensure-at-jobs-page

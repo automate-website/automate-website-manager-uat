@@ -1,4 +1,4 @@
-title: action-delete-scenario
+name: action-delete-scenario
 fragment: true
 steps:
    - include: goto-scenarios-page

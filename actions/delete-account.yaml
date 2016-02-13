@@ -1,4 +1,4 @@
-title: action-delete-account
+name: action-delete-account
 fragment: true
 steps:
     - include: goto-account-page

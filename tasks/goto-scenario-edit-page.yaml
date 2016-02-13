@@ -1,4 +1,4 @@
-title: goto-scenario-edit-page
+name: goto-scenario-edit-page
 fragment: true
 steps:
     - click:

@@ -1,5 +1,5 @@
-title: goto-projects-page
+name: goto-projects-page
 fragment: true
 steps:
-    - url: ${projectsPageUrl}
+    - open: ${projectsPageUrl}
     - include: ensure-at-projects-page

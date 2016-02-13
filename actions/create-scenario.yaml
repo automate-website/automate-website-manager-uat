@@ -1,4 +1,4 @@
-title: action-create-scenario
+name: action-create-scenario
 fragment: true
 steps:
     - include: goto-scenarios-page

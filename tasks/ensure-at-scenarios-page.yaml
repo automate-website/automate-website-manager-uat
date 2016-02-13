@@ -1,4 +1,4 @@
-title: ensure-at-scenarios-page
+name: ensure-at-scenarios-page
 fragment: true
 steps:
    - ensure: ${siteSelectorControlNavigateToPage}[title="${dataCurrentProjectTitle}"]

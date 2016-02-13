@@ -1,5 +1,5 @@
-title: goto-account-page
+name: goto-account-page
 fragment: true
 steps:
-    - url: ${accountPageUrl}
+    - open: ${accountPageUrl}
     - include: ensure-at-account-page

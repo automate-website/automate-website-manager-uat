@@ -1,4 +1,4 @@
-title: ensure-at-home-page
+name: ensure-at-home-page
 fragment: true
 steps:
     - include: ensure-at-projects-page

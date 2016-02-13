@@ -1,4 +1,4 @@
-title: ensure-at-jobs-page
+name: ensure-at-jobs-page
 fragment: true
 steps:
     - ensure:

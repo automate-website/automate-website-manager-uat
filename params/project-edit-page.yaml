@@ -1,8 +1,8 @@
-title: params-project-edit-page
+name: params-project-edit-page
 fragment: true
 steps:
    - store:
-        projectPageSelectorInputTitle: "${siteSelectorContainerMain} input#projectTitle"
+        projectPageSelectorInputname: "${siteSelectorContainerMain} input#projectTitle"
         projectPageSelectorContainerColorPicker: ${siteSelectorContainerMain} div.color-picker
         projectPageSelectorControlColorSecond: ${projectPageSelectorContainerColorPicker} label:nth-child(2)
         projectPageSelectorControlDialect: ${siteSelectorContainerMain} div.btn-group

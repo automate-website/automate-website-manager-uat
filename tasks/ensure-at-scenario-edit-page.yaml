@@ -1,4 +1,4 @@
-title: ensure-at-scenario-edit-page
+name: ensure-at-scenario-edit-page
 fragment: true
 steps:
    - ensure: ${siteSelectorControlNavigateToPage}[title="${scenarioEditPageHeaderTitle}"]

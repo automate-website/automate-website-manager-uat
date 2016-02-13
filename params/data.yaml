@@ -1,4 +1,4 @@
-title: params-data
+name: params-data
 fragment: true
 steps:
    - store:
@@ -7,7 +7,7 @@ steps:
         dataCurrentUserEmail: ${ dataCurrentUserFirstName + '.' + dataCurrenUserLastName + '@example.com' }
         dataCurrentUserPassword: "${ $.random.string() }"
         dataNewUserPassword: "${ $.random.string() }"
-        dataCurrentProjectTitle: ${ $.random.word() }
+        dataCurrentProjectname: ${ $.random.word() }
         dataCurrentUserSshKey: "-----BEGIN RSA PRIVATE KEY-----
 MIICXQIBAAKBgQDKp1X19Ro42GbZpl1PVBqMLyiVICuqy/gf34jXR6hz8bHUGH59
 +nBR1RHtA7T3xwuFfoy+tRMpqbPC3gXzcasFYDEJec4sFkN+6+l/koOOEElb4G/T
@@ -24,5 +24,5 @@ d/UCDn5M5bVqd4Y0+B3BAkBsy4uQLXs+PZT67bKRKhiH0yz1Zz5pZHuqAY8EW29x
 NM+YkPDe5TSouxrLjf6Te/4jCMxTCu2SbMfgwBd4oEkR
 -----END RSA PRIVATE KEY-----"
         dataCurrentRepository: git@bitbucket.org:automate-website/automate-website-manager-uat-example.git
-        dataCurrentScenarioTitle: New scenario
-        dataCurrentScenarioBaseUrl: https://automate.website/app
+        dataCurrentScenarioname: New scenario
+        dataCurrentScenarioBaseopen: https://automate.website/app

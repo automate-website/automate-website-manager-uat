@@ -1,4 +1,4 @@
-title: action-register
+name: action-register
 fragment: true
 steps:
     - include: goto-register-page

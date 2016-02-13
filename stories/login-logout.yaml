@@ -1,4 +1,4 @@
-title: story-login-logout
+name: story-login-logout
 steps:
    - include: params
    - include: action-register

@@ -1,4 +1,4 @@
-title: goto-scenarios-page
+name: goto-scenarios-page
 fragment: true
 steps:
     - include: goto-projects-page

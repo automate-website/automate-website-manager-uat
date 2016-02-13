@@ -1,4 +1,4 @@
-title: action-login
+name: action-login
 fragment: true
 steps:
    - include: goto-login-page

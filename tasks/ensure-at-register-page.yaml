@@ -1,4 +1,4 @@
-title: ensure-at-register-page
+name: ensure-at-register-page
 fragment: true
 steps:
     - ensure:

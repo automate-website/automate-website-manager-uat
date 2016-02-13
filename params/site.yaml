@@ -1,9 +1,9 @@
-title: params-site
+name: params-site
 fragment: true
 steps:
    - store:
-        siteBaseUrl: https://automate.website
-        siteAppUrl: ${siteBaseUrl}/app
+        siteBaseopen: https://automate.website
+        siteAppopen: ${siteBaseUrl}/app
         dataCurrentSshKey: Secr3t
         siteAppSelectorContainerHeader: div[ui-view=navbar]
         siteAppSelectorControlGotoAccount: ${siteAppSelectorContainerHeader} a[ui-sref="account"]

@@ -1,4 +1,4 @@
-title: params
+name: params
 fragment: true
 steps:
    - include: params-site

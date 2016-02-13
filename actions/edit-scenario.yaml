@@ -1,4 +1,4 @@
-title: action-edit-scenario
+name: action-edit-scenario
 fragment: true
 steps:
    - include: ensure-at-scenario-edit-page
@@ -7,7 +7,7 @@ steps:
    - include: save-scenario
    - include: ensure-at-scenarios-page
 ---
-title: edit-scenario-basics
+name: edit-scenario-basics
 fragment: true
 steps:
     - ensure: ${scenarioEditPageSelectorInputTitle}
@@ -21,7 +21,7 @@ steps:
         selector: ${scenarioEditPageSelectorControlSeleniumDialect}
         text: ${scenarioEditPageTextControlSeleniumDialect}
 ---
-title: edit-scenario-steps
+name: edit-scenario-steps
 fragment: true
 steps:
     - click: ${scenarioEditPageSelectorControlAddStep}
@@ -30,7 +30,7 @@ steps:
         selector: ${scenarioEditPageSelectorInputStepParameters}
         input: ${dataCurrentScenarioBaseUrl}
 ---
-title: save-scenario
+name: save-scenario
 fragment: true
 steps:
     - click:

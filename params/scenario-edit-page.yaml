@@ -1,10 +1,10 @@
-title: params-scenario-edit-page
+name: params-scenario-edit-page
 fragment: true
 steps:
    - store:
-        scenarioEditPageHeaderTitle: Edit scenario
-        scenarioEditPageSelectorInputTitle: "${siteSelectorContainerMain} input#scenarioTitle"
-        scenarioEditPageSelectorInputBaseUrl: "${siteSelectorContainerMain} input#baseUrl"
+        scenarioEditPageHeadername: Edit scenario
+        scenarioEditPageSelectorInputname: "${siteSelectorContainerMain} input#scenarioTitle"
+        scenarioEditPageSelectorInputBaseopen: "${siteSelectorContainerMain} input#baseUrl"
         scenarioEditPageSelectorControlSeleniumDialect: "${siteSelectorContainerMain} select#dialect"
         scenarioEditPageTextControlSeleniumDialect: SELENIUM
         scenarioEditPageSelectorControlAddStep: a[ng-click="addStep()"]

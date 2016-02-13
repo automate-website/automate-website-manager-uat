@@ -1,5 +1,5 @@
-title: goto-register-page
+name: goto-register-page
 fragment: true
 steps:
-    - url: ${registerPageUrl}
+    - open: ${registerPageUrl}
     - include: ensure-at-register-page

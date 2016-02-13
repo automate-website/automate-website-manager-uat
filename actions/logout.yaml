@@ -1,4 +1,4 @@
-title: action-logout
+name: action-logout
 fragment: true
 steps:
   - include: goto-account-page

@@ -1,4 +1,4 @@
-title: ensure-at-login-page
+name: ensure-at-login-page
 fragment: true
 steps:
     - ensure:

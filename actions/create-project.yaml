@@ -1,4 +1,4 @@
-title: configure-project
+name: configure-project
 fragment: true
 steps:
    - include: ensure-at-projects-page
@@ -10,13 +10,13 @@ steps:
         input: ${dataCurrentProjectTitle}
    - click: ${projectPageSelectorControlColorSecond}
 ---
-title: save-project
+name: save-project
 fragment: true
 steps:
    - click: ${projectPageSelectorControlSave}
    - include: ensure-at-scenarios-page
 ---
-title: action-create-local-selenium-project
+name: action-create-local-selenium-project
 fragment: true
 steps:
    - include: configure-project
@@ -24,7 +24,7 @@ steps:
    - click: ${projectPageSelectorControlTypeLocal}
    - include: save-project
 ---
-title: action-create-local-waml-project
+name: action-create-local-waml-project
 fragment: true
 steps:
    - include: configure-project

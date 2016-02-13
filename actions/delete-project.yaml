@@ -1,4 +1,4 @@
-title: action-delete-project
+name: action-delete-project
 fragment: true
 steps:
     - include: goto-projects-page

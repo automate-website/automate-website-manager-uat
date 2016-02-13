@@ -1,4 +1,4 @@
-title: action-run-scenario
+name: action-run-scenario
 fragment: true
 steps:
    - include: ensure-at-scenarios-page

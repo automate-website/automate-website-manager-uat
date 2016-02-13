@@ -1,4 +1,4 @@
-title: params-scenarios-page
+name: params-scenarios-page
 fragment: true
 steps:
   - store:
