@@ -1,10 +1,11 @@
 name: params-login-page
 fragment: true
 steps:
-   - store:
-         loginPageopen: ${siteAppUrl}/login
-         loginPageSelectorContainer: "div.login-panel"
-         loginPageSelectorInputEmail: "${loginPageSelectorContainer} input#inputEmail"
-         loginPageSelectorInputPassword: "${loginPageSelectorContainer} input#inputPassword"
-         loginPageSelectorControlLogin: ${loginPageSelectorContainer} button[type=submit]
-         loginPageHeadername: Sign in
+  - store:
+      loginPageTitle: ${siteAppUrl}/login
+      loginPageSelectorContainer: "div.login-panel"
+  - store:
+      loginPageSelectorInputEmail: "${loginPageSelectorContainer} input#inputEmail"
+      loginPageSelectorInputPassword: "${loginPageSelectorContainer} input#inputPassword"
+      loginPageSelectorControlLogin: ${loginPageSelectorContainer} button[type=submit]
+      loginPageHeadername: Sign in

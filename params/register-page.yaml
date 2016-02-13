@@ -1,10 +1,11 @@
 name: params-register-page
 fragment: true
 steps:
-   - store:
-         registerPageopen: ${siteAppUrl}/signup
-         registerPageSelectorContainer: "div.signup-panel"
-         registerPageSelectorInputEmail: "${registerPageSelectorContainer} input#inputEmail"
-         registerPageSelectorInputPassword: "${registerPageSelectorContainer} input#inputPassword"
-         registerPageSelectorControlSignup: ${registerPageSelectorContainer} button[type=submit]
-         registerPageHeadername: Sign up
+  - store:
+      registerPageUrl: ${siteAppUrl}/signup
+      registerPageSelectorContainer: "div.signup-panel"
+  - store:
+      registerPageSelectorInputEmail: "${registerPageSelectorContainer} input#inputEmail"
+      registerPageSelectorInputPassword: "${registerPageSelectorContainer} input#inputPassword"
+      registerPageSelectorControlSignup: ${registerPageSelectorContainer} button[type=submit]
+      registerPageHeaderTitle: Sign up

@@ -1,13 +1,14 @@
 name: params-data
 fragment: true
 steps:
-   - store:
-        dataCurrentUserFirstName: ${ $.random.first() }
-        dataCurrenUserLastName: ${ $.random.last() }
+  - store:
+        dataCurrentUserFirstName: ${ _.mock.person().firstName() }
+        dataCurrenUserLastName: ${ _.mock.person().lastName() }
+  - store:
         dataCurrentUserEmail: ${ dataCurrentUserFirstName + '.' + dataCurrenUserLastName + '@example.com' }
-        dataCurrentUserPassword: "${ $.random.string() }"
-        dataNewUserPassword: "${ $.random.string() }"
-        dataCurrentProjectname: ${ $.random.word() }
+        dataCurrentUserPassword: "${ _.mock.person().password() }"
+        dataNewUserPassword: "${ _.mock.person().password() }"
+        dataCurrentProjectname: ${ _.mock.textProducer().word() }
         dataCurrentUserSshKey: "-----BEGIN RSA PRIVATE KEY-----
 MIICXQIBAAKBgQDKp1X19Ro42GbZpl1PVBqMLyiVICuqy/gf34jXR6hz8bHUGH59
 +nBR1RHtA7T3xwuFfoy+tRMpqbPC3gXzcasFYDEJec4sFkN+6+l/koOOEElb4G/T
@@ -25,4 +26,4 @@ NM+YkPDe5TSouxrLjf6Te/4jCMxTCu2SbMfgwBd4oEkR
 -----END RSA PRIVATE KEY-----"
         dataCurrentRepository: git@bitbucket.org:automate-website/automate-website-manager-uat-example.git
         dataCurrentScenarioname: New scenario
-        dataCurrentScenarioBaseopen: https://automate.website/app
+        dataCurrentScenarioBaseTitle: https://automate.website/app

@@ -2,8 +2,8 @@ name: params-projects-page
 fragment: true
 steps:
   - store:
-      projectsPageopen: ${siteAppUrl}/projects
-      projectsPageHeadername: Projects
+      projectsPageUrl: ${siteAppUrl}/projects
+      projectsPageHeaderTitle: Projects
       projectsPageSelectorControlNew: ${siteSelectorContainerMain} a.project-panel-new
       projectsPageSelectorControlExisting: ${siteSelectorContainerMain} div.project-panel
       projectsPageSelectorInnerProjectContainer: ${siteSelectorContainerMain} a.project-panel-inner

@@ -1,17 +1,20 @@
 name: params-project-edit-page
 fragment: true
 steps:
-   - store:
-        projectPageSelectorInputname: "${siteSelectorContainerMain} input#projectTitle"
-        projectPageSelectorContainerColorPicker: ${siteSelectorContainerMain} div.color-picker
-        projectPageSelectorControlColorSecond: ${projectPageSelectorContainerColorPicker} label:nth-child(2)
-        projectPageSelectorControlDialect: ${siteSelectorContainerMain} div.btn-group
-        projectPageSelectorControlDialectSelenium: ${projectPageSelectorControlDialect} label[uib-btn-radio*=SELENIUM]
-        projectPageSelectorControlDialectWAML: ${projectPageSelectorControlDialect} label[uib-btn-radio*=AUTOMATE_WEBSITE]
-        projectPageSelectorControlType: ${siteSelectorContainerMain} div.btn-group
-        projectPageSelectorControlTypeLocal: ${projectPageSelectorControlType} label[uib-btn-radio*=LOCAL]
-        projectPageSelectorControlTypHosted: ${projectPageSelectorControlType} label[uib-btn-radio*=HOSTED_GIT]
-        projectPageSelectorControlSave: ${siteSelectorContainerMain} button[type=submit]
-        projectPageSelectorInputRepositoryLocation: "${siteSelectorContainerMain} input#inputProjectRepositorySettingsLocation"
-        projectPageSelectorInputRepositoryBranchName: "${siteSelectorContainerMain} input#inputProjectRepositorySettingsBranchName"
-        projectPageSelectorInputRepositoryDirectory: "${siteSelectorContainerMain} input#inputProjectRepositorySettingsDirectory"
+  - store:
+      projectPageSelectorInputname: "${siteSelectorContainerMain} input#projectTitle"
+      projectPageSelectorContainerColorPicker: ${siteSelectorContainerMain} div.color-picker
+  - store:
+      projectPageSelectorControlColorSecond: ${projectPageSelectorContainerColorPicker} label:nth-child(2)
+      projectPageSelectorControlDialect: ${siteSelectorContainerMain} div.btn-group
+  - store:
+      projectPageSelectorControlDialectSelenium: ${projectPageSelectorControlDialect} label[uib-btn-radio*=SELENIUM]
+      projectPageSelectorControlDialectWAML: ${projectPageSelectorControlDialect} label[uib-btn-radio*=AUTOMATE_WEBSITE]
+      projectPageSelectorControlType: ${siteSelectorContainerMain} div.btn-group
+  - store:
+      projectPageSelectorControlTypeLocal: ${projectPageSelectorControlType} label[uib-btn-radio*=LOCAL]
+      projectPageSelectorControlTypHosted: ${projectPageSelectorControlType} label[uib-btn-radio*=HOSTED_GIT]
+      projectPageSelectorControlSave: ${siteSelectorContainerMain} button[type=submit]
+      projectPageSelectorInputRepositoryLocation: "${siteSelectorContainerMain} input#inputProjectRepositorySettingsLocation"
+      projectPageSelectorInputRepositoryBranchName: "${siteSelectorContainerMain} input#inputProjectRepositorySettingsBranchName"
+      projectPageSelectorInputRepositoryDirectory: "${siteSelectorContainerMain} input#inputProjectRepositorySettingsDirectory"

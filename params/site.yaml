@@ -1,12 +1,14 @@
 name: params-site
 fragment: true
 steps:
-   - store:
-        siteBaseopen: https://automate.website
-        siteAppopen: ${siteBaseUrl}/app
-        dataCurrentSshKey: Secr3t
-        siteAppSelectorContainerHeader: div[ui-view=navbar]
-        siteAppSelectorControlGotoAccount: ${siteAppSelectorContainerHeader} a[ui-sref="account"]
-        siteSelectorContainerMain: div.container-main
-        siteSelectorControlGotoProjects: ${siteAppSelectorContainerHeader} a[ui-sref="projects"]
-        siteSelectorControlNavigateToPage: ${siteAppSelectorContainerHeader} h1 a.navbar-header-animation
+  - store:
+      siteBaseUrl: https://automate.website
+  - store:
+      siteAppUrl: ${siteBaseUrl}/app
+      dataCurrentSshKey: Secr3t
+      siteAppSelectorContainerHeader: div[ui-view=navbar]
+  - store:
+      siteAppSelectorControlGotoAccount: ${siteAppSelectorContainerHeader} a[ui-sref="account"]
+      siteSelectorContainerMain: div.container-main
+      siteSelectorControlGotoProjects: ${siteAppSelectorContainerHeader} a[ui-sref="projects"]
+      siteSelectorControlNavigateToPage: ${siteAppSelectorContainerHeader} h1 a.navbar-header-animation

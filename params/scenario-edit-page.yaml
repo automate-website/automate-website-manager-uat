@@ -4,7 +4,7 @@ steps:
    - store:
         scenarioEditPageHeadername: Edit scenario
         scenarioEditPageSelectorInputname: "${siteSelectorContainerMain} input#scenarioTitle"
-        scenarioEditPageSelectorInputBaseopen: "${siteSelectorContainerMain} input#baseUrl"
+        scenarioEditPageSelectorInputBaseTitle: "${siteSelectorContainerMain} input#baseUrl"
         scenarioEditPageSelectorControlSeleniumDialect: "${siteSelectorContainerMain} select#dialect"
         scenarioEditPageTextControlSeleniumDialect: SELENIUM
         scenarioEditPageSelectorControlAddStep: a[ng-click="addStep()"]

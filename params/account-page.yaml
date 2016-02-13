@@ -2,7 +2,7 @@ name: params-account-page
 fragment: true
 steps:
    - store:
-         accountPageopen: ${siteAppUrl}/account
+         accountPageTitle: ${siteAppUrl}/account
          accountPageSelectorControllLogout: button
          accountPageControlTextLogout: Logout
          accountPageControlTextDeleteAccount: Delete account
