@@ -3,4 +3,4 @@ fragment: true
 steps:
    - store:
         activityPageSelectorJobContainername: ${siteSelectorContainerMain} h3.jobs-overview-job-title
-        jobsPageTitle: ${siteAppUrl}/jobs
+        jobsPageUrl: ${siteAppUrl}/jobs

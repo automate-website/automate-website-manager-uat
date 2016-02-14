@@ -2,7 +2,7 @@ name: params-login-page
 fragment: true
 steps:
   - store:
-      loginPageTitle: ${siteAppUrl}/login
+      loginPageUrl: ${siteAppUrl}/login
       loginPageSelectorContainer: "div.login-panel"
   - store:
       loginPageSelectorInputEmail: "${loginPageSelectorContainer} input#inputEmail"
