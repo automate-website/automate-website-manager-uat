@@ -13,7 +13,7 @@ steps:
     - click:
         selector: ${projectsPageModalSelectorControl}
         text: ${projectsPageModalControlTextDeleteProject}
-# currently not supported by waml draft-02
-#    - waitUntilNoneOfElementsContainsText:
-#        selector: ${projectsPageSelectorControlExisting}
-#        text: ${dataCurrentProjectTitle}
+    - ensure:
+        selector: ${projectsPageSelectorControlExisting}
+        text: ${dataCurrentProjectTitle}
+        absent: true

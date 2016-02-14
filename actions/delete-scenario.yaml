@@ -10,7 +10,7 @@ steps:
    - click:
         selector: ${scenariosPageSelectorDropdownControlElements}
         text: ${scenariosPageControlTextDeleteScenario}
-# currently not supported by waml draft-02
-#   - waitUntilNoneOfElementsContainsText:
-#        selector: ${scenariosPageSelectorScenarioContainer}
-#        text: ${dataCurrentScenarioTitle}
+   - ensure:
+        selector: ${scenariosPageSelectorScenarioContainer}
+        text: ${dataCurrentScenarioTitle}
+        absent: true
